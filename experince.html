@@ -1,0 +1,56 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShakiQ</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <link rel="stylesheet" href="styl.css">
+    <div class="profile-card">
+        <h1 id="text-color">Work experiences</h1>
+
+       <div class="navbar">
+    <a href="index.html" onclick="showSection('Back')"><i class="fas fa-user"></i></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="...">
+
+</div>
+
+        <div class="section personal-info active-section">
+            <h4>962 General Service, Amman, Jordan — Program Manager</h4>
+            <h6> March 2018 - June 2022<br>
+                - Ensure all projects are delivered on time and within budget.<br>
+                - Develop a detailed project plan to monitor and track progress.<br>
+                - Establish and maintain relationships with third parties/vendors.<br>
+                - Delegate project tasks based on the staff members' individual skill levels.<br>
+                - Develop comprehensive project plans to be shared with clients</h6>
+            <h4>Renton Technical College, Renton, WA - Financial Aid Specialist</h4>
+            <h6> December 2022 - Present<br>
+                - Advising: Providing information and guidance to students and families on financial aid programs, eligibility criteria, application procedures, and deadlines.<br>
+                - Application Assistance: Assisting students in completing and submitting financial aid applications, such as the Free Application for Federal Student Aid (FAFSA) or other relevant forms (WASFA).<br>
+                - Evaluation and Awarding: Reviewing financial aid applications, assessing eligibility based on criteria, and determining the types and amounts of aid for which students qualify.<br>
+                - Counseling: Offering financial counseling to students to help them understand their financial obligations, loan repayment options, and managing personal budgets.<br>
+                - Compliance: Ensuring compliance with federal and state regulations related to financial aid programs and maintaining accurate records of aid disbursement.<br>
+                - Communication: Serving as a liaison between students, families, educational institutions, and funding agencies to address inquiries and resolve issues related to financial aid.<br>
+                - Stay Updated: Keeping up-to-date with changes in financial aid policies, regulations, and programs to provide accurate and relevant information to students. <br>
+                - Workshops and Presentations: Conducting workshops, seminars, or presentations to educate students and families about financial aid opportunities and resources.</h6>
+            
+            
+        </div>
+
+        
+    </div>
+
+    <script>
+        function showSection(sectionName) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+            });
+
+            document.querySelector('.' + sectionName).classList.add('active-section');
+        }
+    </script>
+</body>
+</html>
