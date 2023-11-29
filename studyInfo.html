@@ -1,0 +1,43 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShakiQ</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <link rel="stylesheet" href="styl.css">
+    <div class="profile-card">
+        <h1 id="text-color">Studying Information</h1>
+
+       <div class="navbar">
+    <a href="info.html" onclick="showSection('Back')"><i class="fas fa-user"></i></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="...">
+
+</div>
+
+        <div class="section personal-info active-section">
+            <h2>Personal Information</h2>
+            <h4>Renton Community College, Renton, WA — Associates</h4>
+            <h6> September 2022 - Present Computer Science.</h6>
+            <h4>  Savior Evangelical School, Zarqa, Jordan— High School</h4>
+            <h6> September 2016- June 2018</h6>
+            
+        </div>
+
+        
+    </div>
+
+    <script>
+        function showSection(sectionName) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+            });
+
+            document.querySelector('.' + sectionName).classList.add('active-section');
+        }
+    </script>
+</body>
+</html>
