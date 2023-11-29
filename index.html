@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShakiQ</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <link rel="stylesheet" href="styl.css">
+    <div class="profile-card">
+        <h1 id="text-color">Shakir Qteifan</h1>
+        <img class="profile-picture" src="Shakir.Q.jpg" alt="User's Profile Picture"> 
+
+       <div class="navbar">
+    <a href="#" onclick="showSection('personal-info')"><i class="fas fa-user"></i></a>
+    <a href="studyInfo.html" onclick="showSection('study-info')"><i class="fas fa-book"></i></a>
+    <a href="experince.html" onclick="showSection('experiences')"><i class="fas fa-briefcase"></i></a>
+    <a href="contact.html" onclick="showSection('communication')"><i class="fas fa-comments"></i></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="...">
+
+</div>
+
+        <div class="section personal-info active-section">
+            <h2>Personal Information</h2>
+            <h4>My name is Shakir and you can call me Chakk, I had born in Jordan in city Called Zarqa.</h4>
+            <h4>My birthday in September 6th.</h4>
+            
+        </div>
+
+        
+    </div>
+
+    <script>
+        function showSection(sectionName) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active-section');
+            });
+
+            document.querySelector('.' + sectionName).classList.add('active-section');
+        }
+    </script>
+</body>
+</html>
